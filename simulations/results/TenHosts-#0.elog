@@ -1,0 +1,428 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid TenHosts-0-20201210-01:07:30-6295 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t ds_ex1_tictoc.simulations.Scenario2 n Scenario2 cm 1
+MS id 1 d bgb=400,400
+MC id 2 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[0]
+GC m 2 g 0 n in o 0
+GC m 2 g 3 n out o 1
+MS id 2 d i=device/laptop
+MC id 3 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[1]
+GC m 3 g 0 n in o 0
+GC m 3 g 3 n out o 1
+MS id 3 d i=device/laptop
+MC id 4 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[2]
+GC m 4 g 0 n in o 0
+GC m 4 g 3 n out o 1
+MS id 4 d i=device/laptop
+MC id 5 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[3]
+GC m 5 g 0 n in o 0
+GC m 5 g 3 n out o 1
+MS id 5 d i=device/laptop
+MC id 6 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[4]
+GC m 6 g 0 n in o 0
+GC m 6 g 3 n out o 1
+MS id 6 d i=device/laptop
+MC id 7 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[5]
+GC m 7 g 0 n in o 0
+GC m 7 g 3 n out o 1
+MS id 7 d i=device/laptop
+MC id 8 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[6]
+GC m 8 g 0 n in o 0
+GC m 8 g 3 n out o 1
+MS id 8 d i=device/laptop
+MC id 9 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[7]
+GC m 9 g 0 n in o 0
+GC m 9 g 3 n out o 1
+MS id 9 d i=device/laptop
+MC id 10 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[8]
+GC m 10 g 0 n in o 0
+GC m 10 g 3 n out o 1
+MS id 10 d i=device/laptop
+MC id 11 c SimpleNodev2 t ds_ex1_tictoc.SimpleNodev2 pid 1 n node[9]
+GC m 11 g 0 n in o 0
+GC m 11 g 3 n out o 1
+MS id 11 d i=device/laptop
+GC m 2 g 3145728 n port$i i 0 o 0
+GC m 2 g 3670016 n port$o i 0 o 1
+GC m 3 g 3145728 n port$i i 0 o 0
+GC m 3 g 3670016 n port$o i 0 o 1
+CC sm 2 sg 3670016 dm 3 dg 3145728
+CS sm 2 sg 3670016 d ""
+CC sm 3 sg 3670016 dm 2 dg 3145728
+CS sm 3 sg 3670016 d ""
+GC m 2 g 3145729 n port$i i 1 o 0
+GC m 2 g 3670017 n port$o i 1 o 1
+GC m 4 g 3145728 n port$i i 0 o 0
+GC m 4 g 3670016 n port$o i 0 o 1
+CC sm 2 sg 3670017 dm 4 dg 3145728
+CS sm 2 sg 3670017 d ""
+CC sm 4 sg 3670016 dm 2 dg 3145729
+CS sm 4 sg 3670016 d ""
+GC m 2 g 3145730 n port$i i 2 o 0
+GC m 2 g 3670018 n port$o i 2 o 1
+GC m 9 g 3145728 n port$i i 0 o 0
+GC m 9 g 3670016 n port$o i 0 o 1
+CC sm 2 sg 3670018 dm 9 dg 3145728
+CS sm 2 sg 3670018 d ""
+CC sm 9 sg 3670016 dm 2 dg 3145730
+CS sm 9 sg 3670016 d ""
+GC m 2 g 3145731 n port$i i 3 o 0
+GC m 2 g 3670019 n port$o i 3 o 1
+GC m 10 g 3145728 n port$i i 0 o 0
+GC m 10 g 3670016 n port$o i 0 o 1
+CC sm 2 sg 3670019 dm 10 dg 3145728
+CS sm 2 sg 3670019 d ""
+CC sm 10 sg 3670016 dm 2 dg 3145731
+CS sm 10 sg 3670016 d ""
+GC m 2 g 3145732 n port$i i 4 o 0
+GC m 2 g 3670020 n port$o i 4 o 1
+GC m 11 g 3145728 n port$i i 0 o 0
+GC m 11 g 3670016 n port$o i 0 o 1
+CC sm 2 sg 3670020 dm 11 dg 3145728
+CS sm 2 sg 3670020 d ""
+CC sm 11 sg 3670016 dm 2 dg 3145732
+CS sm 11 sg 3670016 d ""
+GC m 3 g 3145729 n port$i i 1 o 0
+GC m 3 g 3670017 n port$o i 1 o 1
+GC m 4 g 3145729 n port$i i 1 o 0
+GC m 4 g 3670017 n port$o i 1 o 1
+CC sm 3 sg 3670017 dm 4 dg 3145729
+CS sm 3 sg 3670017 d ""
+CC sm 4 sg 3670017 dm 3 dg 3145729
+CS sm 4 sg 3670017 d ""
+GC m 3 g 3145730 n port$i i 2 o 0
+GC m 3 g 3670018 n port$o i 2 o 1
+GC m 5 g 3145728 n port$i i 0 o 0
+GC m 5 g 3670016 n port$o i 0 o 1
+CC sm 3 sg 3670018 dm 5 dg 3145728
+CS sm 3 sg 3670018 d ""
+CC sm 5 sg 3670016 dm 3 dg 3145730
+CS sm 5 sg 3670016 d ""
+GC m 3 g 3145731 n port$i i 3 o 0
+GC m 3 g 3670019 n port$o i 3 o 1
+GC m 6 g 3145728 n port$i i 0 o 0
+GC m 6 g 3670016 n port$o i 0 o 1
+CC sm 3 sg 3670019 dm 6 dg 3145728
+CS sm 3 sg 3670019 d ""
+CC sm 6 sg 3670016 dm 3 dg 3145731
+CS sm 6 sg 3670016 d ""
+GC m 3 g 3145732 n port$i i 4 o 0
+GC m 3 g 3670020 n port$o i 4 o 1
+GC m 7 g 3145728 n port$i i 0 o 0
+GC m 7 g 3670016 n port$o i 0 o 1
+CC sm 3 sg 3670020 dm 7 dg 3145728
+CS sm 3 sg 3670020 d ""
+CC sm 7 sg 3670016 dm 3 dg 3145732
+CS sm 7 sg 3670016 d ""
+GC m 3 g 3145733 n port$i i 5 o 0
+GC m 3 g 3670021 n port$o i 5 o 1
+GC m 11 g 3145729 n port$i i 1 o 0
+GC m 11 g 3670017 n port$o i 1 o 1
+CC sm 3 sg 3670021 dm 11 dg 3145729
+CS sm 3 sg 3670021 d ""
+CC sm 11 sg 3670017 dm 3 dg 3145733
+CS sm 11 sg 3670017 d ""
+GC m 4 g 3145730 n port$i i 2 o 0
+GC m 4 g 3670018 n port$o i 2 o 1
+GC m 8 g 3145728 n port$i i 0 o 0
+GC m 8 g 3670016 n port$o i 0 o 1
+CC sm 4 sg 3670018 dm 8 dg 3145728
+CS sm 4 sg 3670018 d ""
+CC sm 8 sg 3670016 dm 4 dg 3145730
+CS sm 8 sg 3670016 d ""
+GC m 4 g 3145731 n port$i i 3 o 0
+GC m 4 g 3670019 n port$o i 3 o 1
+GC m 9 g 3145729 n port$i i 1 o 0
+GC m 9 g 3670017 n port$o i 1 o 1
+CC sm 4 sg 3670019 dm 9 dg 3145729
+CS sm 4 sg 3670019 d ""
+CC sm 9 sg 3670017 dm 4 dg 3145731
+CS sm 9 sg 3670017 d ""
+GC m 5 g 3145729 n port$i i 1 o 0
+GC m 5 g 3670017 n port$o i 1 o 1
+GC m 6 g 3145729 n port$i i 1 o 0
+GC m 6 g 3670017 n port$o i 1 o 1
+CC sm 5 sg 3670017 dm 6 dg 3145729
+CS sm 5 sg 3670017 d ""
+CC sm 6 sg 3670017 dm 5 dg 3145729
+CS sm 6 sg 3670017 d ""
+GC m 5 g 3145730 n port$i i 2 o 0
+GC m 5 g 3670018 n port$o i 2 o 1
+GC m 8 g 3145729 n port$i i 1 o 0
+GC m 8 g 3670017 n port$o i 1 o 1
+CC sm 5 sg 3670018 dm 8 dg 3145729
+CS sm 5 sg 3670018 d ""
+CC sm 8 sg 3670017 dm 5 dg 3145730
+CS sm 8 sg 3670017 d ""
+GC m 6 g 3145730 n port$i i 2 o 0
+GC m 6 g 3670018 n port$o i 2 o 1
+GC m 7 g 3145729 n port$i i 1 o 0
+GC m 7 g 3670017 n port$o i 1 o 1
+CC sm 6 sg 3670018 dm 7 dg 3145729
+CS sm 6 sg 3670018 d ""
+CC sm 7 sg 3670017 dm 6 dg 3145730
+CS sm 7 sg 3670017 d ""
+GC m 6 g 3145731 n port$i i 3 o 0
+GC m 6 g 3670019 n port$o i 3 o 1
+GC m 8 g 3145730 n port$i i 2 o 0
+GC m 8 g 3670018 n port$o i 2 o 1
+CC sm 6 sg 3670019 dm 8 dg 3145730
+CS sm 6 sg 3670019 d ""
+CC sm 8 sg 3670018 dm 6 dg 3145731
+CS sm 8 sg 3670018 d ""
+GC m 6 g 3145732 n port$i i 4 o 0
+GC m 6 g 3670020 n port$o i 4 o 1
+GC m 9 g 3145730 n port$i i 2 o 0
+GC m 9 g 3670018 n port$o i 2 o 1
+CC sm 6 sg 3670020 dm 9 dg 3145730
+CS sm 6 sg 3670020 d ""
+CC sm 9 sg 3670018 dm 6 dg 3145732
+CS sm 9 sg 3670018 d ""
+GC m 7 g 3145730 n port$i i 2 o 0
+GC m 7 g 3670018 n port$o i 2 o 1
+GC m 8 g 3145731 n port$i i 3 o 0
+GC m 8 g 3670019 n port$o i 3 o 1
+CC sm 7 sg 3670018 dm 8 dg 3145731
+CS sm 7 sg 3670018 d ""
+CC sm 8 sg 3670019 dm 7 dg 3145730
+CS sm 8 sg 3670019 d ""
+GC m 7 g 3145731 n port$i i 3 o 0
+GC m 7 g 3670019 n port$o i 3 o 1
+GC m 10 g 3145729 n port$i i 1 o 0
+GC m 10 g 3670017 n port$o i 1 o 1
+CC sm 7 sg 3670019 dm 10 dg 3145729
+CS sm 7 sg 3670019 d ""
+CC sm 10 sg 3670017 dm 7 dg 3145731
+CS sm 10 sg 3670017 d ""
+GC m 8 g 3145732 n port$i i 4 o 0
+GC m 8 g 3670020 n port$o i 4 o 1
+GC m 10 g 3145730 n port$i i 2 o 0
+GC m 10 g 3670018 n port$o i 2 o 1
+CC sm 8 sg 3670020 dm 10 dg 3145730
+CS sm 8 sg 3670020 d ""
+CC sm 10 sg 3670018 dm 8 dg 3145732
+CS sm 10 sg 3670018 d ""
+MB sm 1 tm 2 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[0]:status: 11
+ME
+MB sm 1 tm 3 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[1]:status: 11
+ME
+MB sm 1 tm 4 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[2]:status: 11
+ME
+MB sm 1 tm 5 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[3]:status: 11
+ME
+MB sm 1 tm 6 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[4]:status: 11
+ME
+MB sm 1 tm 7 m initialize(0)
+CM id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe -1
+CM id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n timer k 2 pe -1
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n timer k 2 pe 0
+ES t 5
+- INFO (SimpleNodev2)Scenario2.node[5]:status: 10
+ME
+MB sm 1 tm 8 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[6]:status: 11
+ME
+MB sm 1 tm 9 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[7]:status: 11
+ME
+MB sm 1 tm 10 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[8]:status: 11
+ME
+MB sm 1 tm 11 m initialize(0)
+- INFO (SimpleNodev2)Scenario2.node[9]:status: 11
+ME
+
+E # 1 t 5 m 7 ce 0 msg 3
+BU id 7 txt Start
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 0
+SH sm 7 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 1 cid 4
+
+E # 2 t 5 m 6 ce 1 msg 2
+- INFO:Node 4 received a msg from 5
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 2
+SH sm 6 sg 3670016
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 2 cid 4
+
+E # 3 t 5 m 3 ce 2 msg 2
+- INFO:Node 1 received a msg from 4
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 3
+SH sm 3 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 3 cid 4
+
+E # 4 t 5 m 4 ce 3 msg 2
+- INFO:Node 2 received a msg from 1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 4
+SH sm 4 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 4 cid 4
+
+E # 5 t 5 m 3 ce 4 msg 2
+- INFO:Node 1 received a msg from 2
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 5
+SH sm 3 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 5 cid 4
+
+E # 6 t 5 m 4 ce 5 msg 2
+- INFO:Node 2 received a msg from 1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 6
+SH sm 4 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 6 cid 4
+
+E # 7 t 5 m 3 ce 6 msg 2
+- INFO:Node 1 received a msg from 2
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 7
+SH sm 3 sg 3670016
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 7 cid 4
+
+E # 8 t 5 m 2 ce 7 msg 2
+- INFO:Node 0 received a msg from 1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 8
+SH sm 2 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 8 cid 4
+
+E # 9 t 5 m 4 ce 8 msg 2
+- INFO:Node 2 received a msg from 0
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 9
+SH sm 4 sg 3670016
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 9 cid 4
+
+E # 10 t 5 m 2 ce 9 msg 2
+- INFO:Node 0 received a msg from 2
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 10
+SH sm 2 sg 3670019
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 10 cid 4
+
+E # 11 t 5 m 10 ce 10 msg 2
+- INFO:Node 8 received a msg from 0
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 11
+SH sm 10 sg 3670016
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 11 cid 4
+
+E # 12 t 5 m 2 ce 11 msg 2
+- INFO:Node 0 received a msg from 8
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 12
+SH sm 2 sg 3670019
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 12 cid 4
+
+E # 13 t 5 m 10 ce 12 msg 2
+- INFO:Node 8 received a msg from 0
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 13
+SH sm 10 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 13 cid 4
+
+E # 14 t 5 m 7 ce 13 msg 2
+- INFO:Node 5 received a msg from 8
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 14
+SH sm 7 sg 3670018
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 14 cid 4
+
+E # 15 t 5 m 8 ce 14 msg 2
+- INFO:Node 6 received a msg from 5
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 15
+SH sm 8 sg 3670016
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 15 cid 4
+
+E # 16 t 5 m 4 ce 15 msg 2
+- INFO:Node 2 received a msg from 6
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 16
+SH sm 4 sg 3670018
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 16 cid 4
+
+E # 17 t 5 m 8 ce 16 msg 2
+- INFO:Node 6 received a msg from 2
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 17
+SH sm 8 sg 3670019
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 17 cid 4
+
+E # 18 t 5 m 7 ce 17 msg 2
+- INFO:Node 5 received a msg from 6
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 18
+SH sm 7 sg 3670016
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 18 cid 4
+
+E # 19 t 5 m 3 ce 18 msg 2
+- INFO:Node 1 received a msg from 5
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 19
+SH sm 3 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 19 cid 4
+
+E # 20 t 5 m 4 ce 19 msg 2
+- INFO:Node 2 received a msg from 1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 20
+SH sm 4 sg 3670019
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 20 cid 4
+
+E # 21 t 5 m 9 ce 20 msg 2
+- INFO:Node 7 received a msg from 2
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 21
+SH sm 9 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 21 cid 4
+
+E # 22 t 5 m 4 ce 21 msg 2
+- INFO:Node 2 received a msg from 7
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 22
+SH sm 4 sg 3670019
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 22 cid 4
+
+E # 23 t 5 m 9 ce 22 msg 2
+- INFO:Node 7 received a msg from 2
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 23
+SH sm 9 sg 3670018
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 23 cid 4
+
+E # 24 t 5 m 6 ce 23 msg 2
+- INFO:Node 4 received a msg from 7
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 24
+SH sm 6 sg 3670016
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 24 cid 4
+
+E # 25 t 5 m 3 ce 24 msg 2
+- INFO:Node 1 received a msg from 4
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 25
+SH sm 3 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 25 cid 4
+
+E # 26 t 5 m 4 ce 25 msg 2
+- INFO:Node 2 received a msg from 1
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 26
+SH sm 4 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 26 cid 4
+
+E # 27 t 5 m 3 ce 26 msg 2
+- INFO:Node 1 received a msg from 2
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 27
+SH sm 3 sg 3670017
+ES t 5
+CL id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n msg k 1 pe 27 cid 4

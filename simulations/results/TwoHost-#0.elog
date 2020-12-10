@@ -1,0 +1,383 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid TwoHost-0-20201209-23:07:11-3888 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t ds_ex1_tictoc.simulations.Scenario1 n Scenario1 cm 1
+MS id 1 d bgb=200,100
+MC id 2 c SimpleNode t ds_ex1_tictoc.SimpleNode pid 1 n node[0]
+GC m 2 g 0 n in o 0
+GC m 2 g 3 n out o 1
+MS id 2 d i=device/laptop
+MC id 3 c SimpleNode t ds_ex1_tictoc.SimpleNode pid 1 n node[1]
+GC m 3 g 0 n in o 0
+GC m 3 g 3 n out o 1
+MS id 3 d i=device/laptop
+CC sm 3 sg 3 dm 2 dg 0
+CS sm 3 sg 3 d ""
+CC sm 2 sg 3 dm 3 dg 0
+CS sm 2 sg 3 d ""
+MB sm 1 tm 2 m initialize(0)
+ME
+MB sm 1 tm 3 m initialize(0)
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe -1
+CM id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n timer k 2 pe -1
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n timer k 2 pe 0
+ES t 5
+ME
+
+E # 1 t 5 m 3 ce 0 msg 1
+BU id 3 txt Start
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 0
+SH sm 3 sg 3 pd 0.1
+ES t 5.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 1 cid 2
+
+E # 2 t 5.1 m 2 ce 1 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 2
+SH sm 2 sg 3 pd 0.1
+ES t 5.2
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 2 cid 2
+
+E # 3 t 5.2 m 3 ce 2 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 3
+SH sm 3 sg 3 pd 0.1
+ES t 5.3
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 3 cid 2
+
+E # 4 t 5.3 m 2 ce 3 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 4
+SH sm 2 sg 3 pd 0.1
+ES t 5.4
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 4 cid 2
+
+E # 5 t 5.4 m 3 ce 4 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 5
+SH sm 3 sg 3 pd 0.1
+ES t 5.5
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 5 cid 2
+
+E # 6 t 5.5 m 2 ce 5 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 6
+SH sm 2 sg 3 pd 0.1
+ES t 5.6
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 6 cid 2
+
+E # 7 t 5.6 m 3 ce 6 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 7
+SH sm 3 sg 3 pd 0.1
+ES t 5.7
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 7 cid 2
+
+E # 8 t 5.7 m 2 ce 7 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 8
+SH sm 2 sg 3 pd 0.1
+ES t 5.8
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 8 cid 2
+
+E # 9 t 5.8 m 3 ce 8 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 9
+SH sm 3 sg 3 pd 0.1
+ES t 5.9
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 9 cid 2
+
+E # 10 t 5.9 m 2 ce 9 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 10
+SH sm 2 sg 3 pd 0.1
+ES t 6
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 10 cid 2
+
+E # 11 t 6 m 3 ce 10 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 11
+SH sm 3 sg 3 pd 0.1
+ES t 6.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 11 cid 2
+
+E # 12 t 6.1 m 2 ce 11 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 12
+SH sm 2 sg 3 pd 0.1
+ES t 6.2
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 12 cid 2
+
+E # 13 t 6.2 m 3 ce 12 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 13
+SH sm 3 sg 3 pd 0.1
+ES t 6.3
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 13 cid 2
+
+E # 14 t 6.3 m 2 ce 13 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 14
+SH sm 2 sg 3 pd 0.1
+ES t 6.4
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 14 cid 2
+
+E # 15 t 6.4 m 3 ce 14 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 15
+SH sm 3 sg 3 pd 0.1
+ES t 6.5
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 15 cid 2
+
+E # 16 t 6.5 m 2 ce 15 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 16
+SH sm 2 sg 3 pd 0.1
+ES t 6.6
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 16 cid 2
+
+E # 17 t 6.6 m 3 ce 16 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 17
+SH sm 3 sg 3 pd 0.1
+ES t 6.7
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 17 cid 2
+
+E # 18 t 6.7 m 2 ce 17 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 18
+SH sm 2 sg 3 pd 0.1
+ES t 6.8
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 18 cid 2
+
+E # 19 t 6.8 m 3 ce 18 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 19
+SH sm 3 sg 3 pd 0.1
+ES t 6.9
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 19 cid 2
+
+E # 20 t 6.9 m 2 ce 19 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 20
+SH sm 2 sg 3 pd 0.1
+ES t 7
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 20 cid 2
+
+E # 21 t 7 m 3 ce 20 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 21
+SH sm 3 sg 3 pd 0.1
+ES t 7.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 21 cid 2
+
+E # 22 t 7.1 m 2 ce 21 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 22
+SH sm 2 sg 3 pd 0.1
+ES t 7.2
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 22 cid 2
+
+E # 23 t 7.2 m 3 ce 22 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 23
+SH sm 3 sg 3 pd 0.1
+ES t 7.3
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 23 cid 2
+
+E # 24 t 7.3 m 2 ce 23 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 24
+SH sm 2 sg 3 pd 0.1
+ES t 7.4
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 24 cid 2
+
+E # 25 t 7.4 m 3 ce 24 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 25
+SH sm 3 sg 3 pd 0.1
+ES t 7.5
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 25 cid 2
+
+E # 26 t 7.5 m 2 ce 25 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 26
+SH sm 2 sg 3 pd 0.1
+ES t 7.6
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 26 cid 2
+
+E # 27 t 7.6 m 3 ce 26 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 27
+SH sm 3 sg 3 pd 0.1
+ES t 7.7
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 27 cid 2
+
+E # 28 t 7.7 m 2 ce 27 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 28
+SH sm 2 sg 3 pd 0.1
+ES t 7.8
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 28 cid 2
+
+E # 29 t 7.8 m 3 ce 28 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 29
+SH sm 3 sg 3 pd 0.1
+ES t 7.9
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 29 cid 2
+
+E # 30 t 7.9 m 2 ce 29 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 30
+SH sm 2 sg 3 pd 0.1
+ES t 8
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 30 cid 2
+
+E # 31 t 8 m 3 ce 30 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 31
+SH sm 3 sg 3 pd 0.1
+ES t 8.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 31 cid 2
+
+E # 32 t 8.1 m 2 ce 31 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 32
+SH sm 2 sg 3 pd 0.1
+ES t 8.2
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 32 cid 2
+
+E # 33 t 8.2 m 3 ce 32 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 33
+SH sm 3 sg 3 pd 0.1
+ES t 8.3
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 33 cid 2
+
+E # 34 t 8.3 m 2 ce 33 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 34
+SH sm 2 sg 3 pd 0.1
+ES t 8.4
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 34 cid 2
+
+E # 35 t 8.4 m 3 ce 34 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 35
+SH sm 3 sg 3 pd 0.1
+ES t 8.5
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 35 cid 2
+
+E # 36 t 8.5 m 2 ce 35 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 36
+SH sm 2 sg 3 pd 0.1
+ES t 8.6
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 36 cid 2
+
+E # 37 t 8.6 m 3 ce 36 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 37
+SH sm 3 sg 3 pd 0.1
+ES t 8.7
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 37 cid 2
+
+E # 38 t 8.7 m 2 ce 37 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 38
+SH sm 2 sg 3 pd 0.1
+ES t 8.8
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 38 cid 2
+
+E # 39 t 8.8 m 3 ce 38 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 39
+SH sm 3 sg 3 pd 0.1
+ES t 8.9
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 39 cid 2
+
+E # 40 t 8.9 m 2 ce 39 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 40
+SH sm 2 sg 3 pd 0.1
+ES t 9
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 40 cid 2
+
+E # 41 t 9 m 3 ce 40 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 41
+SH sm 3 sg 3 pd 0.1
+ES t 9.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 41 cid 2
+
+E # 42 t 9.1 m 2 ce 41 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 42
+SH sm 2 sg 3 pd 0.1
+ES t 9.2
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 42 cid 2
+
+E # 43 t 9.2 m 3 ce 42 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 43
+SH sm 3 sg 3 pd 0.1
+ES t 9.3
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 43 cid 2
+
+E # 44 t 9.3 m 2 ce 43 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 44
+SH sm 2 sg 3 pd 0.1
+ES t 9.4
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 44 cid 2
+
+E # 45 t 9.4 m 3 ce 44 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 45
+SH sm 3 sg 3 pd 0.1
+ES t 9.5
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 45 cid 2
+
+E # 46 t 9.5 m 2 ce 45 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 46
+SH sm 2 sg 3 pd 0.1
+ES t 9.6
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 46 cid 2
+
+E # 47 t 9.6 m 3 ce 46 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 47
+SH sm 3 sg 3 pd 0.1
+ES t 9.7
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 47 cid 2
+
+E # 48 t 9.7 m 2 ce 47 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 48
+SH sm 2 sg 3 pd 0.1
+ES t 9.8
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 48 cid 2
+
+E # 49 t 9.8 m 3 ce 48 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 49
+SH sm 3 sg 3 pd 0.1
+ES t 9.9
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 49 cid 2
+
+E # 50 t 9.9 m 2 ce 49 msg 0
+- INFO:Node 0 received a msg from 1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 50
+SH sm 2 sg 3 pd 0.1
+ES t 10
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 50 cid 2
+
+E # 51 t 10 m 3 ce 50 msg 0
+- INFO:Node 1 received a msg from 0
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 51
+SH sm 3 sg 3 pd 0.1
+ES t 10.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n pingpong k 1 pe 51 cid 2
+SE e 0 c 38 m "Simulation time limit reached -- at t=10s, event #52"
